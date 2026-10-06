@@ -1,0 +1,148 @@
+/* ---------- სწრაფი კონტაქტი ---------- */
+.quick-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+}
+.quick-contact strong {
+  display: block;
+  font-size: 14px;
+}
+.quick-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.quick-icon.wa {
+  background: #e4f6ec;
+  color: var(--success);
+}
+.quick-contact > i:last-child {
+  margin-left: auto;
+  color: var(--muted);
+}
+
+/* ---------- ფორმა ---------- */
+.order-form {
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+}
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+.field label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.field input,
+.field select,
+.field textarea {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  background: var(--surface);
+  width: 100%;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--brand);
+}
+.field textarea {
+  resize: vertical;
+}
+
+.field.has-error input,
+.field.has-error select {
+  border-color: #d9401e;
+}
+.field-error {
+  font-size: 12px;
+  color: #d9401e;
+  min-height: 14px;
+}
+
+.area-input {
+  position: relative;
+}
+.area-input input {
+  padding-right: 40px;
+}
+.area-input span {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.form-note {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 20px;
+}
+.form-note.success {
+  color: var(--success);
+}
+.form-note.error {
+  color: #d9401e;
+}
+
+/* ---------- ეტაპები ---------- */
+.steps-card {
+  padding: 18px;
+}
+.step {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+.step-num {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 13px;
+}
+.step strong {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (min-width: 700px) {
+  .order-form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .order-form .field:nth-child(6),  /* comment */
+  .order-form button,
+  .order-form .form-note {
+    grid-column: 1 / -1;
+  }
+}

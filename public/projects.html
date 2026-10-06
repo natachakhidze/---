@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>პროექტები — მშენსერვისი</title>
+    <meta
+      name="description"
+      content="ჩვენს მიერ შესრულებული სამშენებლო და სარემონტო პროექტები — ლამინატი, გიფსოკარდონი, ფილა და სხვა."
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
+    <script
+      src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"
+      defer
+    ></script>
+  </head>
+  <body data-page="projects">
+    <section class="section" style="padding-top: 24px">
+      <div class="container">
+        <span class="eyebrow"
+          ><i data-lucide="folder-open" class="ic"></i>პორტფოლიო</span
+        >
+        <h1 class="section-title">შესრულებული პროექტები და მომსახურება</h1>
+        <p class="section-sub">
+          გაეცანით ჩვენს მიერ განხორციელებულ სამუშაოებსა და სარემონტო
+          გადაწყვეტილებებს
+        </p>
+
+        <!-- ფილტრები -->
+        <div class="filters" id="filters">
+          <button class="chip active" data-filter="all">ყველა</button>
+          <button class="chip" data-filter="laminate">ლამინატი</button>
+          <button class="chip" data-filter="gypsum">გიფსოკარდონი</button>
+          <button class="chip" data-filter="tile">ფილა & მეტლახი</button>
+          <button class="chip" data-filter="paint">სამღებრო</button>
+        </div>
+
+        <!-- პროექტების სია -->
+        <div class="grid" id="projectsGrid" style="margin-top: 16px; gap: 16px">
+          <p class="section-sub" id="loadingMsg">იტვირთება...</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 8px">
+          <a href="/order" class="btn btn-primary">
+            ყველა სერვისის ნახვა<i data-lucide="arrow-right" class="ic"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/layout.js" defer></script>
+    <script src="/js/projects.js" defer></script>
+  </body>
+</html>

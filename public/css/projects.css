@@ -1,0 +1,85 @@
+/* ---------- ფილტრები ---------- */
+.filters {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 14px 0 4px;
+  scrollbar-width: none;
+}
+.filters::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  flex-shrink: 0;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+.chip.active {
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+/* ---------- პროექტის ბარათი ---------- */
+.project-card {
+  overflow: hidden;
+}
+.project-image {
+  aspect-ratio: 4/3;
+  position: relative;
+}
+.project-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.project-body {
+  padding: 14px;
+}
+.project-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.project-meta .badge {
+  background: var(--tint);
+  color: var(--ink);
+}
+.project-meta .days {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.project-body h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.project-body p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+@media (min-width: 700px) {
+  #projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  #projectsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

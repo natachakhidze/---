@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "გიფსოკარდონის ჭერი",
+    "category": "gypsum",
+    "categoryLabel": "გიფსოკარდონი",
+    "image": "/images/project1.jpe",
+    "status": "ჩაბარებული"
+  },
+  {
+    "id": 2,
+    "title": "გიფსოკარდონის კედელი",
+    "category": "gypsum",
+    "categoryLabel": "გიფსოკარდონი",
+    "image": "/images/project2.jpe",
+    "status": "ჩაბარებული"
+  },
+  {
+    "id": 3,
+    "title": "ადეკორატიული გიფსოკარდონი",
+    "category": "gypsum",
+    "categoryLabel": "გიფსოკარდონი",
+    "image": "/images/project3.jpe",
+    "status": "ჩაბარებული"
+  },
+  {
+    "id": 4,
+    "title": "გიფსოკარდონი + გარე მოპირკეთება",
+    "category": "gypsum",
+    "categoryLabel": "გიფსოკარდონი",
+    "image": "/images/project4.jpe",
+    "status": "ჩაბარებული"
+  }
+]

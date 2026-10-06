@@ -1,0 +1,223 @@
+/* ---------- ჰერო ---------- */
+.hero {
+  padding: 24px 0 8px;
+}
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.hero-title {
+  font-size: 28px;
+  font-weight: 800;
+}
+.hero-text {
+  color: var(--muted);
+  font-size: 15px;
+}
+.hero-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.hero-image {
+  border-radius: var(--radius);
+  aspect-ratio: 4/3;
+  position: relative;
+  margin-top: 6px;
+}
+.hero-image-tag {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: grid;
+  gap: 2px;
+  font-size: 13px;
+  box-shadow: var(--shadow);
+}
+
+.stats {
+  margin-top: 8px;
+}
+.stat {
+  text-align: center;
+  padding: 14px 6px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.stat strong {
+  display: block;
+  font-size: 20px;
+  color: var(--brand);
+}
+.stat span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ---------- კალკულატორი ---------- */
+.calc-card {
+  padding: 18px;
+}
+.calc-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.calc-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+.calc-row strong {
+  color: var(--brand);
+  font-size: 18px;
+}
+.calc-minmax {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.calc-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+.calc-price {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--brand);
+  height: 6px;
+}
+
+/* ---------- სერვისის ბარათი ---------- */
+.service-card {
+  padding: 16px;
+  position: relative;
+}
+.service-price {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--brand);
+  background: var(--brand-soft);
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.service-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--tint);
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+  color: var(--brand);
+}
+.service-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.service-card p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.service-feature {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--brand);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ---------- ბოლო პროექტი ---------- */
+.recent-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+/* ---------- feature-row ---------- */
+.feature-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px;
+}
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.mini-stat {
+  padding: 14px;
+  text-align: center;
+}
+.mini-stat strong {
+  display: block;
+  font-size: 20px;
+  color: var(--brand);
+}
+.mini-stat span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ---------- პრომო ბანერი ---------- */
+.promo-card {
+  padding: 20px;
+  background: linear-gradient(135deg, var(--brand-soft), #fff);
+  border: 1px solid var(--line);
+}
+
+@media (min-width: 900px) {
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 32px;
+  }
+  .hero-image {
+    order: 2;
+    margin-top: 0;
+  }
+  .hero-title {
+    font-size: 40px;
+  }
+  .hero-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+  .stats {
+    grid-column: span 2;
+  }
+}
